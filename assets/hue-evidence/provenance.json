@@ -1,0 +1,149 @@
+{
+  "prepared": "2026-11-18",
+  "note": "원본을 재그림·크롭·업스케일하지 않고 복사했습니다. 제작 범위와 상태는 각 도감의 자료·역할 상세에 표시합니다.",
+  "assets": [
+    {
+      "id": "camera-01-960",
+      "label": "분리된 발판과 오른쪽 벽 · 960×540 유지안",
+      "filename": "camera-01-960.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "fcac94db5ff09a7a427f67b0a2ec76ecc3a82363c7b74d0bfc3d542df1711706",
+      "kind": "unity_scene_comparison_render",
+      "status": "2026-11-10 비교 자료 · 2026-11-11 유지 결정",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "camera-01-640",
+      "label": "분리된 발판과 오른쪽 벽 · 640×360 시험안",
+      "filename": "camera-01-640.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "31943415adc2396e4ed653b615b5f0fdd153739853da458eb63e9cfe4171be2b",
+      "kind": "unity_scene_comparison_render",
+      "status": "2026-11-10 비교 자료 · 2026-11-11 반려",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "camera-04-960",
+      "label": "낮은 천장 아래 발판 · 960×540 유지안",
+      "filename": "camera-04-960.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "cf5c13eda1820bd06b7b2b9fda1790bc47ee7af3c4901fe6daa902b19071f829",
+      "kind": "unity_scene_comparison_render",
+      "status": "2026-11-10 비교 자료 · 2026-11-11 유지 결정",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "camera-04-640",
+      "label": "낮은 천장 아래 발판 · 640×360 시험안",
+      "filename": "camera-04-640.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "e6bd3ee287b7b51a1a496ef785e3c0b0620514504f0d70a01ae4eddf525b2993",
+      "kind": "unity_scene_comparison_render",
+      "status": "2026-11-10 비교 자료 · 2026-11-11 반려",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "camera-06-960",
+      "label": "낮은 길과 건너편 발판 · 960×540 유지안",
+      "filename": "camera-06-960.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "38c35b8e36e71f2b076f67fa2dfdda6c2b4e7969e3a751484fd6ac77e346b5ac",
+      "kind": "unity_scene_comparison_render",
+      "status": "2026-11-10 비교 자료 · 2026-11-11 유지 결정",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "camera-06-640",
+      "label": "낮은 길과 건너편 발판 · 640×360 시험안",
+      "filename": "camera-06-640.png",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "d28e28255bb595eacd78df5ea1d01c49ebdb9888fec8d23b69c802a9c9d3cda6",
+      "kind": "unity_scene_comparison_render",
+      "status": "2026-11-10 비교 자료 · 2026-11-11 반려",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "foreground-runtime-01",
+      "label": "전시판 R14 · 시작구간",
+      "filename": "foreground-runtime-01.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "759585c3b903e62c895be666603d4aa22bbc7c8502830ea4034498cb3fcc4366",
+      "kind": "actual_runtime_camera_render",
+      "status": "당시 전시 빌드 적용·실행 확인 자료",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "foreground-runtime-02",
+      "label": "전시판 R14 · 상부구간",
+      "filename": "foreground-runtime-02.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "b99ca74abe7d5ba20783f8808ac9776ca02b4d17b99be0e7d7968d93fa34f31e",
+      "kind": "actual_runtime_camera_render",
+      "status": "당시 전시 빌드 적용·실행 확인 자료",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "foreground-runtime-03",
+      "label": "전시판 R14 · 보스구간",
+      "filename": "foreground-runtime-03.png",
+      "width": 1280,
+      "height": 720,
+      "sha256": "d6512d1c687034f646cc83bd81418c43eb83e04240028e11ff18b19896524541",
+      "kind": "actual_runtime_camera_render",
+      "status": "당시 전시 빌드 적용·실행 확인 자료",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "foreground-fern-native",
+      "label": "전경 고사리 · 네이티브 투명 PNG",
+      "filename": "foreground-fern-native.png",
+      "width": 256,
+      "height": 172,
+      "sha256": "82b093152cc32c73afdafa1b09e58d49acdb76d6934e74164e41b582848df610",
+      "kind": "game_foreground_module",
+      "status": "R14 실제 전경 셰이더에서 추출한 별도 모듈",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "foreground-branch-native",
+      "label": "전경 목질 가지 · 네이티브 투명 PNG",
+      "filename": "foreground-branch-native.png",
+      "width": 384,
+      "height": 576,
+      "sha256": "ef789b1f0e6eff3d7866627c82b45ca696b7d1304f13cee7afe7b1d4e66ebbb1",
+      "kind": "game_foreground_module",
+      "status": "R14 실제 전경 셰이더에서 추출한 별도 모듈",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "route-plan",
+      "label": "뿌리밑 1구역 · 칸 단위 설계도",
+      "filename": "route-plan.png",
+      "width": 3200,
+      "height": 1914,
+      "sha256": "7d5d537417a91cb99e6f99abd0cfff6b484212b75d4c2302b1b8e81fdc88b2a9",
+      "kind": "planning_diagram",
+      "status": "출시판 설계 제안 · 상세 배치 최종 확정/플레이 검증 완료로 표시하지 않음",
+      "transformation": "원본 바이트 그대로 복사"
+    },
+    {
+      "id": "route-flow",
+      "label": "뿌리밑 1구역 · 주 경로와 곁길",
+      "filename": "route-flow.png",
+      "width": 3200,
+      "height": 1914,
+      "sha256": "8c3f7cda48ca66a762c155d1c1b9ffa8633f591a98c6474f1e32aabb3c5392f2",
+      "kind": "planning_diagram",
+      "status": "출시판 설계 제안 · 상세 배치 최종 확정/플레이 검증 완료로 표시하지 않음",
+      "transformation": "원본 바이트 그대로 복사"
+    }
+  ]
+}

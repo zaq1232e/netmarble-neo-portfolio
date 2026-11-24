@@ -1,0 +1,111 @@
+.portfolio-entry {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  background: #091217;
+  isolation: isolate;
+  will-change: opacity;
+}
+.portfolio-entry-art {
+  display: block;
+  max-width: none;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+.portfolio-entry::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 90px 8px #06111777;
+  background: linear-gradient(0deg, #071116eb, #08161da6 18%, transparent 40%, transparent 70%, #08161db8);
+}
+.portfolio-entry--start::after {
+  box-shadow: inset 0 0 140px 20px #05101666;
+  background: linear-gradient(0deg, #071116e6, transparent 38%, #0a1b244d 72%, #080f16a6),
+    radial-gradient(ellipse at 50% 28%, #0d202870, transparent 65%);
+}
+.portfolio-entry-label {
+  position: absolute;
+  bottom: max(13vh, 52px);
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: calc(100% - 40px);
+  opacity: 0;
+  color: #e7d6a3;
+  font-family: "Noto Serif KR", "Nanum Myeongjo", "Batang", Georgia, serif;
+  font-size: clamp(15px, 2.1vw, 23px);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: .14em;
+  text-align: center;
+  text-shadow: 0 2px 16px #060d13, 0 1px 4px #060d13;
+}
+.portfolio-entry-label::before,
+.portfolio-entry-label::after {
+  content: '';
+  flex: 0 0 clamp(22px, 4vw, 48px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c9b37a99);
+}
+.portfolio-entry-label::after { transform: rotate(180deg); }
+.portfolio-entry--dive { background: #0c181e; }
+.portfolio-entry--dive .portfolio-entry-plane {
+  min-height: 0;
+  background: transparent;
+  overflow: hidden;
+  contain: paint;
+}
+.portfolio-entry--dive .portfolio-entry-plane::after,
+.portfolio-entry--dive .portfolio-entry-plane .island-name { display: none; }
+.portfolio-entry--dive .portfolio-entry-plane > .world-plane {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: none;
+  transition: none;
+}
+.portfolio-entry-wake { display: block; opacity: 0; will-change: transform, opacity; }
+/* The article already accepts input behind the camera. Show its scroll thumb on arrival. */
+html:has(body > .portfolio-entry--dive) { scrollbar-width: none; }
+html:has(body > .portfolio-entry--dive)::-webkit-scrollbar { display: none; }
+.portfolio-entry--dive::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('assets/world-sea.png') center / cover no-repeat;
+  filter: blur(24px);
+  opacity: .32;
+}
+.portfolio-entry--dive::after {
+  box-shadow: none;
+  background: radial-gradient(ellipse at 50% 48%, transparent 38%, #06141d29 68%, #07121c85 100%);
+  animation: island-peripheral-shade .52s ease-out both;
+}
+@keyframes island-peripheral-shade {
+  0% { opacity: .3; }
+  72%, 100% { opacity: 1; }
+}
+.portfolio-entry--dive .portfolio-entry-label {
+  bottom: auto;
+  max-width: none;
+  display: block;
+  color: white;
+  white-space: nowrap;
+  line-height: 1.2;
+  transform-origin: 50% 50%;
+  will-change: transform, opacity;
+}
+.portfolio-entry--dive .portfolio-entry-label::before,
+.portfolio-entry--dive .portfolio-entry-label::after { content: none; }
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-entry { display: none !important; }
+}
+.reduced-motion .portfolio-entry { display: none !important; }

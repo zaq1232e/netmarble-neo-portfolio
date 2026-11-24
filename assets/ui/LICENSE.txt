@@ -1,0 +1,4 @@
+Icons: Open book, Treasure map, Cog, Magnifying glass by Lorc.
+Source: https://game-icons.net/
+License: CC BY 3.0 — https://creativecommons.org/licenses/by/3.0/
+Original shapes unchanged; displayed using a CSS color mask and resized to fit the interface.
