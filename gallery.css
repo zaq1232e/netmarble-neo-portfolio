@@ -1,0 +1,101 @@
+/* A common reading surface for the portfolio and its evidence. */
+:root {
+  --portfolio-gothic: "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  --folio-surface: #192c36;
+  --folio-rule: #47606a;
+  --folio-accent: #e5cc99;
+}
+body, #app, #app *, #detail-dialog, #detail-dialog * {
+  font-family: var(--portfolio-gothic) !important;
+}
+.title-screen .title-composition h1 {
+  font-size: clamp(2.5rem, 5.6vw, 4.8rem);
+  font-weight: 650; letter-spacing: .055em;
+}
+.title-screen .title-divider, .status-window .status-introduction,
+.status-window .status-skill dd { font-size: .9375rem; line-height: 1.55; }
+.status-window .status-identity h1 { font-size: clamp(1.85rem,3vw,2.5rem); letter-spacing: -.035em; }
+.status-window .status-skill dt { font-size: .9375rem; }
+.world-natural .island-name { font-weight: 650; letter-spacing: .015em; }
+
+.process-screen .process-document { background: var(--folio-surface); padding: clamp(16px,2.2vw,32px); }
+.process-screen .archive-title { font-size: clamp(1.1rem,1.7vw,1.4rem); letter-spacing: .06em; }
+.process-screen .record-project-identity h2 { font-size: 1.1rem; }
+.process-screen .process-overview { padding-bottom: 16px; }
+.process-overview.has-hero { grid-template-columns: minmax(0,.83fr) minmax(0,1.17fr); align-items: center; }
+.process-screen .process-overview .story-hero { width: 100%; max-width: none; margin: 0; }
+.process-screen .process-overview .process-intro h1 {
+  font-size: clamp(1.375rem,2vw,1.75rem); line-height: 1.35;
+  font-weight: 680; letter-spacing: -.035em; margin: 0;
+}
+.process-screen .process-kicker, .process-screen .process-status { display: inline; font-size: .8125rem; line-height: 1.6; }
+.process-screen .process-status { display: inline-block; margin: 0 0 .5rem .6rem; }
+.process-screen .process-overview .process-lead {
+  max-width: 52rem; font-size: .9375rem; line-height: 1.65; margin: .55rem 0;
+}
+.process-screen .process-overview .process-role { font-size: .875rem; line-height: 1.6; margin: .45rem 0; gap: .65rem; }
+.process-screen .process-overview .process-role b { color: var(--folio-accent); font-weight: 650; }
+.process-screen .credits-disclosure { font-size: .8125rem; color: #bdcdd1; }
+.credits-disclosure > summary { width: fit-content; min-height: 32px; padding-block: .45rem; cursor: pointer; }
+.credits-disclosure[open] { margin-bottom: .5rem; }
+.credits-disclosure > summary:focus-visible, .plate-open:focus-visible { outline: 2px solid var(--folio-accent); outline-offset: 3px; }
+.process-screen .process-summary { margin: .6rem 0; background: transparent; }
+.process-screen .process-summary > div { padding: .55rem .75rem; }
+.process-screen .process-summary dt { margin: 0 0 .2rem; }
+.process-screen .process-summary dd { font-size: .875rem; line-height: 1.55; }
+
+.process-screen .story-step { padding: 20px 0; gap: 12px; }
+.process-screen .story-step.has-media { grid-template-columns: 1fr; }
+.process-screen .story-step .story-copy { max-width: 55rem; }
+.process-screen .story-step .process-phase { font-size: .8125rem; color: #acbec1; }
+.process-screen .story-step .story-copy h2 {
+  color: var(--folio-accent); font-size: clamp(1rem,1.4vw,1.125rem);
+  font-weight: 660; line-height: 1.45; margin: .25rem 0;
+}
+.process-screen .story-step .story-copy p, .process-screen .process-audio p {
+  font-size: .9375rem; line-height: 1.6; margin: .25rem 0;
+}
+.process-screen .story-step .story-details { grid-column: 1 / -1; width: 100%; margin: 0; }
+.process-screen .story-details { border: 0; border-top: 1px solid var(--folio-rule); background: transparent; }
+.process-screen .story-details > summary { min-height: 36px; padding: .55rem 0; font-size: .875rem; }
+.process-screen .story-details-body { padding: 0 0 .75rem; }
+
+.evidence-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); align-items: start; gap: 12px; min-width: 0; }
+.evidence-grid.single { grid-template-columns: minmax(0,1fr); }
+.evidence-plate { min-width: 0; margin: 0; }
+.process-screen .evidence-plate button.plate-open {
+  display: grid; place-items: center; position: relative; width: 100%; height: auto;
+  aspect-ratio: 16/9; padding: 0; overflow: hidden; border: 1px solid var(--folio-rule);
+  border-radius: 2px; background: var(--folio-surface); box-shadow: none; cursor: zoom-in;
+}
+.plate-open:hover { outline: 1px solid #a9bdc3; outline-offset: -1px; }
+.plate-open > img { display: block; position:absolute; inset:0; width: 100%; height: 100%; object-fit: contain; }
+.plate-open.pixel-art > img { image-rendering: pixelated; }
+.plate-open .story-zoom { right: 6px; bottom: 6px; }
+.evidence-plate figcaption { padding-top: 6px; line-height: 1.45; }
+.evidence-plate figcaption strong { font-size: .8125rem; font-weight: 550; color: #dce5e5; }
+.evidence-plate figcaption .proof-state { color: #f0c6aa; font-style: normal; font-weight: 650; }
+.process-screen .story-camera, .process-screen .story-camera .record-stage,
+.process-screen .story-camera .record-media-open, .process-screen .process-proof-thumb,
+body #detail-dialog .record-zoom, body #detail-dialog .record-zoom img { background: var(--folio-surface); box-shadow:none; }
+.process-screen .story-camera .record-stage { aspect-ratio: 16 / 9; height: auto; min-height: 0; max-height: none; }
+.process-screen .story-camera .record-media-open, .process-screen .story-camera .record-original { width:100%; height:100%; max-height:none; object-fit:contain; }
+.process-screen .story-camera .process-proof-thumb img { width:100%; height:auto; aspect-ratio:16/9; object-fit:contain; background:var(--folio-surface); }
+.process-screen .story-camera .record-caption { font-size: .8125rem; }
+@media (min-width: 701px) {
+  .process-screen .story-step:has(> .evidence-grid.single) {
+    grid-template-columns: repeat(2,minmax(0,1fr)); gap:12px; align-items: start;
+  }
+  .process-screen .story-step:has(> .evidence-grid.single) > .story-copy { padding-right: 1rem; }
+}
+@media (max-width: 760px) {
+  .process-overview.has-hero { grid-template-columns: 1fr; gap: 12px; }
+  .process-screen .process-document { padding: 16px; }
+  .process-screen .story-step { padding: 16px 0; }
+  .process-screen .process-overview .process-intro h1 { font-size: 1.3rem; }
+  .process-screen .process-summary > div { padding: .45rem .6rem; }
+}
+@media (max-width: 700px) { .evidence-grid { grid-template-columns: minmax(0,1fr); gap: 12px; } }
+
+.gallery-filters { position:absolute; pointer-events:none; }
+.plate-open.motion-matte > img { filter: url("#motion-preview-matte"); }
